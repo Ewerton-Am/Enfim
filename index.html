@@ -51,18 +51,20 @@
   .capa-fundo{z-index:-3}
   .capa-video{z-index:-2}
   .capa-veu{position:absolute;inset:0;z-index:-1;background:
-     radial-gradient(ellipse at 50% 42%, rgba(14,14,17,.52) 0%, rgba(14,14,17,.88) 62%, rgba(14,14,17,.98) 100%),
-     linear-gradient(180deg, rgba(14,14,17,.90) 0%, rgba(14,14,17,.55) 30%, rgba(14,14,17,.97) 100%)}
-  .capa img.logo{width:104px;height:104px;border-radius:50%;margin:0 auto 20px}
-  h1{font-size:2.4rem;line-height:1.1;font-weight:800;letter-spacing:-.01em;color:var(--branco);margin:0 0 12px;text-shadow:0 2px 18px rgba(0,0,0,.7)}
-  .lema{font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--ouro);margin:0 0 20px}
-  .capa p.intro{max-width:42ch;margin:0 auto 28px;font-size:1.05rem;color:#DCD8D1;text-shadow:0 1px 10px rgba(0,0,0,.8)}
+     linear-gradient(180deg, rgba(14,14,17,.78) 0%, rgba(14,14,17,.16) 22%, rgba(14,14,17,.18) 58%, rgba(14,14,17,.94) 100%)}
+  .capa .env{position:relative;padding-top:26px;padding-bottom:26px}
+  .capa .env::before{content:"";position:absolute;inset:-10% -12%;z-index:-1;
+     background:radial-gradient(ellipse 62% 58% at 50% 50%, rgba(14,14,17,.72) 0%, rgba(14,14,17,.42) 55%, rgba(14,14,17,0) 78%)}
+  .capa img.logo{width:104px;height:104px;border-radius:50%;margin:0 auto 20px;box-shadow:0 0 0 1px rgba(244,241,234,.25),0 10px 40px rgba(0,0,0,.7)}
+  h1{font-size:2.4rem;line-height:1.1;font-weight:800;letter-spacing:-.01em;color:var(--branco);margin:0 0 12px;text-shadow:0 2px 5px rgba(0,0,0,.9),0 8px 28px rgba(0,0,0,.8)}
+  .lema{font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--ouro);margin:0 0 20px;text-shadow:0 2px 8px rgba(0,0,0,.9)}
+  .capa p.intro{max-width:42ch;margin:0 auto 28px;font-size:1.05rem;color:#E6E2DB;text-shadow:0 1px 4px rgba(0,0,0,.95),0 4px 16px rgba(0,0,0,.85)}
 
   .botoes{display:flex;flex-direction:column;gap:12px;align-items:center}
   .btn{display:inline-block;font-weight:700;font-size:1.05rem;padding:15px 30px;border-radius:999px;width:100%;max-width:320px;text-align:center}
   .btn-verde{background:var(--verde);color:var(--branco)}
   .btn-verde:hover{background:var(--verde-claro);color:#06240F;text-decoration:none}
-  .btn-linha{border:2px solid rgba(244,241,234,.45);color:var(--creme);background:rgba(14,14,17,.4)}
+  .btn-linha{border:2px solid rgba(244,241,234,.6);color:var(--creme);background:rgba(14,14,17,.55);backdrop-filter:blur(2px)}
   .btn-linha:hover{border-color:var(--ouro);color:var(--ouro);text-decoration:none}
 
   section{padding:56px 0}
